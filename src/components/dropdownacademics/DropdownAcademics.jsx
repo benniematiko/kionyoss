@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Partners = () => {
+const DropdownAcademics = () => {
   return (
     <div>
-      <h2>Partners</h2>
       
     </div>
   )
 }
 
-export default Partners
+export default DropdownAcademics

@@ -1,0 +1,16 @@
+.footercopyright {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+
+  background: linear-gradient(90deg, rgb(23, 20, 56) 0%, rgb(68, 56, 240) 100%); 
+
+  color: white;
+}
+.footercopyright p {
+
+  font-size: 18px
+}

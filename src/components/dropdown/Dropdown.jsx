@@ -1,33 +1,36 @@
-import "./Dropdown.css"
-import React, { useState } from 'react'
-
+import "./Dropdown.css";
+import React, { useState } from "react";
+import { MenuItems } from "../../MenuItems";
 
 const Dropdown = () => {
 
-  const [ click, setclick ] = useState( false);
+  const [click, setclick] = useState(false);
 
-  const handleClick = () => setclick(!click)
+  
+  const handleClick = () => setclick(!click);
+
   return (
     <>
-    <ul onClick={handleClick}
-    className={ click ? "dropdown-menu clicked" : "dropdown-menu"}
-    >
-      {
-        MenuItems.map((item, index) =>{
-          return(
+      <ul
+        onClick={handleClick}
+        className={click ? "dropdown-menu clicked" : "dropdown-menu"}
+      >
+        {MenuItems.map((item, index) => {
+          return (
             <li key={index}>
-              <Link className={item.cName} to={item.path} onClick={()=>setclick(false)}>
-              {item.title}
+              <Link
+                className={item.cName}
+                to={item.path}
+                onClick={() => setclick(false)}
+              >
+                {item.title}
               </Link>
-
             </li>
-          )
-        })
-      }
-
-    </ul>
+          );
+        })}
+      </ul>
     </>
-  )
-}
+  );
+};
 
-export default Dropdown
+export default Dropdown;

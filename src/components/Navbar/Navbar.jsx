@@ -44,6 +44,7 @@ import "./Navbar.css";
 import React, { useState } from "react";
 import { FaBars, FaCaretDown, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Dropdown from "../dropdown/Dropdown";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -51,6 +52,23 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
   return (
     <>
       <nav className="navbar">
@@ -71,7 +89,13 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="nav-item">
+            <li
+              className="nav-item"
+
+              onMouseHover={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+              
+            >
               <Link
                 to="/ourschool"
                 className="nav-links"
@@ -79,11 +103,19 @@ const Navbar = () => {
               >
                 Our School
                 <FaCaretDown />
+
+                
               </Link>
 
               {dropdown && <Dropdown />}
+
+              
             </li>
-            <li className="nav-item">
+
+            <li
+              className="nav-item"
+            
+            >
               <Link
                 to="/academics"
                 className="nav-links"
@@ -93,7 +125,7 @@ const Navbar = () => {
                 <FaCaretDown />
               </Link>
 
-              {dropdown && <Dropdown />}
+              {dropdown && <DropdownAcademics />}
             </li>
 
             <li className="nav-item">

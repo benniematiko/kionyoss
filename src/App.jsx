@@ -1,11 +1,15 @@
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Activities from "./pages/activities/Activities";
+
 import Home from "./pages/home/Home";
-import Participate from "./pages/participate/Participate";
-import Partners from "./pages/partners/Partners";
+
+
 import Navbar from "./components/Navbar/Navbar";
+import Teachers from "./pages/teachers/Teachers";
+import SchoolHistory from "./pages/schoolhistory/SchoolHistory";
+import AlumniCommunity from "./pages/alumni/AlumniCommunity";
+import Academics from "./pages/academics/Academics";
 const App = () => {
   return (
     <div className="app">
@@ -14,9 +18,13 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/participate" element={<Participate />} />
-          <Route path="/partners" element={<Partners />} />
+         
+          <Route path="/teachers" element={<Teachers />} />
+          <Route path="/schoolhistory" element={<SchoolHistory />} />
+          <Route path="/alumni" element={<AlumniCommunity />} />
+          <Route path="/academics" element={<Academics />} />
+       
+        
         </Routes>
       </Router>
     </div>

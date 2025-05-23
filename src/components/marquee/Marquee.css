@@ -1,0 +1,28 @@
+.marqueemain {
+  width: 100%;
+  background-color: rgb(25, 17, 141);
+  color: white;
+  padding: 30px 0;
+}
+
+.marqueecontainer {
+  width: 86%;  
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.marqueetitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+
+.ads a {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 10px;
+}

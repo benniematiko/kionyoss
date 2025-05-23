@@ -1,0 +1,24 @@
+
+.schoolhistorycontainer {
+  width: 86%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding: 30px 0;
+  margin-bottom: 70px;
+}
+
+.schoolhistory {
+  width: 100%;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+}
+
+.principalimg {
+  width: 120%;
+  height: 100%;
+}
+

@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  display: flex;
+  background: rgb(25, 17, 141);
+  color: white;
+  padding: 50px 0 30px 0;
+}
+
+.footercontainer {
+  width: 86%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  
+}
+
+.footercontainer .footerone h1, 
+.footercontainer .footertwo h1, 
+.footercontainer .footerthree h1, 
+.footercontainer .footerfour h1 {
+  font-weight: 400;
+  font-size: 28px;
+  padding-bottom: 16px;
+
+
+}
+
+.footercontainer .footerone ul li, 
+.footercontainer .footertwo ul li, 
+.footercontainer .footerthree ul li, 
+.footercontainer .footerfour ul li {
+  margin: 8px 0;
+  cursor: pointer;
+
+}
+.footercontainer .footerone ul li:hover, 
+.footercontainer .footertwo ul li:hover, 
+.footercontainer .footerthree ul li:hover, 
+.footercontainer .footerfour ul li:hover {
+  color:rgb(146, 171, 238);
+
+}

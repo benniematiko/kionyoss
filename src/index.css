@@ -19,6 +19,16 @@ a {
   color: inherit;
 }
 
+@media(max-width: 960px){
+
+  body {
+    font-size: 80%;
+  }
+
+
+
+}
+
 
 
 

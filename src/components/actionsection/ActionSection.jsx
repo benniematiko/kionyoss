@@ -1,18 +1,17 @@
 import "./ActionSection.css";
+import { Link } from "react-router-dom";
 
 const ActionSection = () => {
   return (
     <div className="actionsection">
-      <div className="actionsecontainer">
-        <div className="actionsectext">
-          <div className="notes">
-            <span>Interested in joining our school? Click this button</span>
-            <button>Join Us</button>
-          </div>
-          {/* <div className="btn">
-            <button>Join Us</button>
-          </div> */}
-        </div>
+      <div className="notes">
+        <p>
+          Interested in joining our school? Click
+          <span className="btn">
+            <Link>Join Us</Link>
+          </span>
+          button
+        </p>
       </div>
     </div>
   );

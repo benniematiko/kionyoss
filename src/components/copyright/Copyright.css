@@ -14,3 +14,17 @@
 
   font-size: 18px
 }
+
+
+
+@media(max-width: 960px){
+
+  .footercopyright p {
+
+    font-size: 80%;
+  }
+  
+
+
+
+}

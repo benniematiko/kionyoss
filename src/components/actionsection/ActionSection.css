@@ -1,4 +1,4 @@
-.actionsection {
+/* .actionsection {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -7,20 +7,25 @@
   background:rgb(30, 2, 129);
 }
 
-.actionsecontainer {
+/* .actionsecontainer {
   width: 86%;
   display: flex;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
+  margin: 0 auto; 
+
   
-}
+} */
+
+/* .actionsecontainer {
+
 
 .actionsectext {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
  
 }
 
@@ -29,6 +34,7 @@
   display: flex;  
   padding-right: 30px;
   align-items: center;
+  justify-content: center;
 
 } 
 
@@ -53,3 +59,63 @@
   background-color: rgb(212, 201, 201);
   
 }
+
+
+
+@media(max-width: 960px){
+
+  .notes span {
+    font-size: 14px;
+    
+  } 
+
+  
+
+
+
+} */
+
+.actionsection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background:rgb(30, 2, 129);
+}
+
+
+.notes p {
+  font-size: 18px;
+  color: white;
+
+} 
+
+.notes span a {
+  background-color: white;
+  color: #000;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+.notes span a:hover {
+  background-color: rgb(189, 176, 176);
+  
+}
+
+
+.notes span { 
+  margin: 0 10px;  
+}
+
+/* Media */
+
+@media(max-width: 960px){
+
+  .notes p {
+    font-size: 14px;
+   
+  } 
+
+}
+

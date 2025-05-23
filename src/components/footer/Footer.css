@@ -40,3 +40,20 @@
   color:rgb(146, 171, 238);
 
 }
+/* Media */
+
+
+
+
+@media(max-width: 960px){
+
+  .footercontainer {
+    width: 92%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+    
+  }
+
+}
